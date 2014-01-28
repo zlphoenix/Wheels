@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5cfac7fd-3850-44a6-a245-658dc1130356"
+  name="SyncServer" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f7e282f4-dfa5-4862-a43b-ea5296c31a4f"
+        name="MaintenanceInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="70fb4cc3-a67b-40cd-a3dc-2457b7590db7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="effb45f8-e61b-438a-95bf-edd3bc128d52"
+              LastKnownName="ProductInfo"
+              LastKnownLocation="Package1_2212.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f932c6ee-6c56-427d-b0c4-26c9be3f9942"
+        name="WheelInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c0a92754-5d82-405e-bfb4-7bf7734b9f46"
+            isSubstitutable="false">
+            <classMoniker
+              Id="effb45f8-e61b-438a-95bf-edd3bc128d52"
+              LastKnownName="ProductInfo"
+              LastKnownLocation="Package1_2212.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="effb45f8-e61b-438a-95bf-edd3bc128d52"
+        name="ProductInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cdd73c14-f7f2-4038-b55b-1f9554a8d850"
+        name="SuitInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="5c971d52-b357-4b02-b307-b357e20653a0"
+            isDerived="false"
+            sourceEndRoleName="SuitInfo"
+            targetEndRoleName="ProductInfo"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="effb45f8-e61b-438a-95bf-edd3bc128d52"
+              LastKnownName="ProductInfo"
+              LastKnownLocation="Package1_2212.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="148cfc0c-252a-424f-8463-331e2f4826da"
+                  name="SuitInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72388aee-2235-40e2-8875-623f0513a262"
+                  name="ProductInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="65a55bca-48cb-4902-9d5c-5579e63256ff"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5b6db6cf-9bcd-458e-b62c-390d3381e1c9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f994e46e-ab00-4419-8cd6-074cdd37f60e"
+        name="InvBalance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ef6d973f-7943-47c6-b16c-05620593459a">
+            <classMoniker
+              Id="effb45f8-e61b-438a-95bf-edd3bc128d52"
+              LastKnownName="ProductInfo"
+              LastKnownLocation="Package1_2212.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

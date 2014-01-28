@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d7103844-3e50-4bd4-9105-eab30a3ede74" name="DomainModel" linkedPackageId="a675c655-e1ca-4a7a-bebe-054acd09bb3e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="668679d1-c16d-41ea-803e-91400e6e504d">
+      <profileInstance Id="47523bf2-54a1-4de2-b440-739f25bae550" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5e1b4cb6-dbab-43a0-8024-f2e04a1b64e8">
+      <profileInstance Id="9b8db478-d539-440c-8cea-d0bd946ae2aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2ca7c050-ef8b-44b0-85b0-1c6a047ccce5" name="ProductInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="effb45f8-e61b-438a-95bf-edd3bc128d52" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0fdfd4bc-3b0b-4781-a536-37dd7bd3faf8" name="WheelInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f932c6ee-6c56-427d-b0c4-26c9be3f9942" />
+        <generalsInternal>
+          <generalization Id="36f8d3f9-ef91-46b8-94a8-1fd564f84db9" isSubstitutable="false">
+            <classMoniker Id="2ca7c050-ef8b-44b0-85b0-1c6a047ccce5" LastKnownName="ProductInfo" />
+            <elementDefinition Id="c0a92754-5d82-405e-bfb4-7bf7734b9f46" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62a52824-a734-4f13-b371-e76b01f4158d" name="MaintenanceInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f7e282f4-dfa5-4862-a43b-ea5296c31a4f" />
+        <generalsInternal>
+          <generalization Id="4d05ac26-f89c-4ff0-99c0-741ebc6637b9" isSubstitutable="false">
+            <classMoniker Id="2ca7c050-ef8b-44b0-85b0-1c6a047ccce5" LastKnownName="ProductInfo" />
+            <elementDefinition Id="70fb4cc3-a67b-40cd-a3dc-2457b7590db7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8d0fef26-e320-461c-8137-12831193a134" name="SuitInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cdd73c14-f7f2-4038-b55b-1f9554a8d850" />
+        <targetEnds>
+          <association Id="67a4907e-ad99-4a04-87d2-6b90b538726a" isDerived="false" sourceEndRoleName="SuitInfo" targetEndRoleName="ProductInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2ca7c050-ef8b-44b0-85b0-1c6a047ccce5" LastKnownName="ProductInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf381c73-db66-409d-b929-49bab0835e88" name="SuitInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="148cfc0c-252a-424f-8463-331e2f4826da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="420e1dc3-fe29-4df2-a056-1bb571f06e5d" name="ProductInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="d56fb8e5-394a-4981-aa97-b231e100dbfe" name="Lower" value="1">
+                      <elementDefinition Id="65a55bca-48cb-4902-9d5c-5579e63256ff" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ef2b65a3-c60b-4f59-89af-1d5ea70c2dd6" name="Upper" value="*">
+                      <elementDefinition Id="5b6db6cf-9bcd-458e-b62c-390d3381e1c9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="72388aee-2235-40e2-8875-623f0513a262" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c971d52-b357-4b02-b307-b357e20653a0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7c45ddb3-799a-4090-8e68-62c74a06e816" name="InvBalance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f994e46e-ab00-4419-8cd6-074cdd37f60e" />
+        <suppliersInternal>
+          <dependency Id="001cd78f-57a2-4cc4-8d4f-27a52b7af138">
+            <classMoniker Id="2ca7c050-ef8b-44b0-85b0-1c6a047ccce5" LastKnownName="ProductInfo" />
+            <elementDefinition Id="ef6d973f-7943-47c6-b16c-05620593459a" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="918a148f-d9b7-41e7-a07f-7570adc126d4" name="Design">
+    <elementDefinition Id="2cae4c1a-44f4-4006-a6a1-802a6f39ce6b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="97ee2099-e259-44aa-b0f3-27846e08de32">
+        <profileInstance Id="590bceda-8aa7-491f-9694-3f4befb43e44" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="59cd9e28-cbd7-4dc0-b9fd-ff061e9ba5a2">
+        <profileInstance Id="76332a13-9def-47c2-be48-774482fb60f3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+  <package Id="a675c655-e1ca-4a7a-bebe-054acd09bb3e" name="SyncServer">
+    <elementDefinition Id="5cfac7fd-3850-44a6-a245-658dc1130356" />
+  </package>
+</logicalClassDesignerModel>

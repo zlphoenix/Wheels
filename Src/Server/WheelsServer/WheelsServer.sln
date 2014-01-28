@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modeling", "Modeling", "{6C3E58E0-F87C-4326-AB94-EC7D4833D2F6}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Design", "Modeling\Design\Design.modelproj", "{094D333C-6497-427D-9155-AD877CD802C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{094D333C-6497-427D-9155-AD877CD802C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094D333C-6497-427D-9155-AD877CD802C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094D333C-6497-427D-9155-AD877CD802C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094D333C-6497-427D-9155-AD877CD802C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{094D333C-6497-427D-9155-AD877CD802C4} = {6C3E58E0-F87C-4326-AB94-EC7D4833D2F6}
+	EndGlobalSection
+EndGlobal
