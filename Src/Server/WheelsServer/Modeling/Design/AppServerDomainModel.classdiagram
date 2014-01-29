@@ -86,6 +86,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47" />
+        <suppliersInternal>
+          <dependency Id="faca508f-06f0-4fa7-9219-d787f00a0e8f">
+            <classMoniker Id="d5988942-f11f-422c-9b32-3ded803eca79" LastKnownName="Supplier" />
+            <elementDefinition Id="f362bc4c-f531-4ada-ac5f-281fb3da46eb" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="9858ba99-731e-49c2-9a8a-9a6d7f9c569c" isDerived="false" sourceEndRoleName="ProductInfo" targetEndRoleName="Price" isLeaf="false" isAbstract="false">
             <classMoniker Id="b388afab-40bd-40b1-9689-c472a51cc7f2" LastKnownName="Price" />
@@ -243,6 +249,11 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="b388afab-40bd-40b1-9689-c472a51cc7f2" name="Price" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5b04a003-0fde-4c68-9571-1d6de4e4092e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d5988942-f11f-422c-9b32-3ded803eca79" name="Supplier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4251c59f-4ecf-42ae-a14f-a833bea7a369" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

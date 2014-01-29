@@ -24,8 +24,8 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
-        name="Price"
+        Id="4251c59f-4ecf-42ae-a14f-a833bea7a369"
+        name="Supplier"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />

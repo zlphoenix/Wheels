@@ -75,6 +75,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f362bc4c-f531-4ada-ac5f-281fb3da46eb">
+            <classMoniker
+              Id="4251c59f-4ecf-42ae-a14f-a833bea7a369"
+              LastKnownName="Supplier"
+              LastKnownLocation="Package_2218.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="b26ed912-e931-4477-a585-e235b7a0a900"
@@ -86,7 +95,7 @@
             <classMoniker
               Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
               LastKnownName="Price"
-              LastKnownLocation="Package_2218.uml" />
+              LastKnownLocation="Package_2220.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -193,6 +202,14 @@
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
+        name="Price"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
