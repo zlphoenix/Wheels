@@ -7,7 +7,7 @@
     <packageHasNamedElement>
       <class
         Id="fa79ead9-43d1-4019-9ba1-0c5b336a1143"
-        name="CarInfo"
+        name="Car"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -15,7 +15,7 @@
     <packageHasNamedElement>
       <class
         Id="e1a02273-dfc6-41fc-bd2f-7015774d176b"
-        name="WheelInfo"
+        name="Wheel"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -25,7 +25,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="ProductInfo"
+              LastKnownName="Product"
               LastKnownLocation="Package_2220.uml" />
           </generalization>
         </generalsInternal>
@@ -43,7 +43,7 @@
             Id="dae486c2-d464-492b-ac08-df77ece4cb7b">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="ProductInfo"
+              LastKnownName="Product"
               LastKnownLocation="Package_2220.uml" />
           </dependency>
         </suppliersInternal>
@@ -52,7 +52,7 @@
     <packageHasNamedElement>
       <class
         Id="4ca8a612-8351-4439-9f78-ee4347bd5cf6"
-        name="MaintenanceInfo"
+        name="Maintenance"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -62,7 +62,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="ProductInfo"
+              LastKnownName="Product"
               LastKnownLocation="Package_2220.uml" />
           </generalization>
         </generalsInternal>
@@ -71,10 +71,65 @@
     <packageHasNamedElement>
       <class
         Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-        name="ProductInfo"
+        name="Product"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b26ed912-e931-4477-a585-e235b7a0a900"
+            isDerived="false"
+            sourceEndRoleName="ProductInfo"
+            targetEndRoleName="Price"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
+              LastKnownName="Price"
+              LastKnownLocation="Package_2218.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1cd185f-cf4d-4a03-9704-ba7007596bb6"
+                  name="ProductInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c5450c1-df62-4f08-afb1-d31828158d22"
+                  name="Price"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2f056cf6-9fd9-486f-ae56-1cfb5dfce250"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b5ffd20c-dfe1-4063-ba66-76c28e2db9fb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -93,7 +148,7 @@
             isAbstract="false">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="ProductInfo"
+              LastKnownName="Product"
               LastKnownLocation="Package_2220.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>

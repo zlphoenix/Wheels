@@ -22,5 +22,13 @@
         LastKnownName="Common"
         LastKnownLocation="Package_2220.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
+        name="Price"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

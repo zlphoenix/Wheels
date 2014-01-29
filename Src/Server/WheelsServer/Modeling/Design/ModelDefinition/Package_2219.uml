@@ -7,7 +7,7 @@
     <packageHasNamedElement>
       <class
         Id="16896561-b840-4683-afc1-9496efc70105"
-        name="UserInfo"
+        name="Customer"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -21,7 +21,7 @@
             isAbstract="false">
             <classMoniker
               Id="fa79ead9-43d1-4019-9ba1-0c5b336a1143"
-              LastKnownName="CarInfo"
+              LastKnownName="Car"
               LastKnownLocation="Package_2220.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>

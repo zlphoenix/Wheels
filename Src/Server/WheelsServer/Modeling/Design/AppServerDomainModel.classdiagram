@@ -1,26 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="81230581-a39b-4577-9b54-692a3eccf1ee" name="AppServerDomainModel" linkedPackageId="378f6c9c-7fe5-440e-be9f-ff9a6431b2a5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="73c12fbc-27f8-4ae2-a935-d179b20db70e">
-      <profileInstance Id="735635db-2ef9-4966-be5d-81d64b954732" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4db6ea2d-7b80-430b-ae55-41f1542aa341">
-      <profileInstance Id="bda47ccb-44e2-47ea-b3b6-98ec3cc62cc1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" name="UserInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="16896561-b840-4683-afc1-9496efc70105" />
         <targetEnds>
           <association Id="e70a787f-c36c-4b34-98ae-c44df521b2f0" isDerived="false" sourceEndRoleName="UserInfo" targetEndRoleName="CarInfo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="fba3d07d-ce23-4c7a-ba32-6ac46b220d4c" LastKnownName="CarInfo" />
+            <classMoniker Id="fba3d07d-ce23-4c7a-ba32-6ac46b220d4c" LastKnownName="Car" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="47465515-73a8-4144-9121-f6fc9743603d" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -49,16 +35,16 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fba3d07d-ce23-4c7a-ba32-6ac46b220d4c" name="CarInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="fba3d07d-ce23-4c7a-ba32-6ac46b220d4c" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fa79ead9-43d1-4019-9ba1-0c5b336a1143" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6afe3cd9-1ee2-417c-870c-26a74cedbed3" name="WheelInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6afe3cd9-1ee2-417c-870c-26a74cedbed3" name="Wheel" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e1a02273-dfc6-41fc-bd2f-7015774d176b" />
         <generalsInternal>
           <generalization Id="edcd5df1-b7d2-4486-bf69-8f04fc41744e" isSubstitutable="false">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="ProductInfo" />
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
             <elementDefinition Id="61b9ebf0-8f92-45fd-b77b-c3b83b99d803" />
           </generalization>
         </generalsInternal>
@@ -69,7 +55,7 @@
         <elementDefinition Id="0b99bd38-1efe-4c90-9ebc-3711f04f660f" />
         <targetEnds>
           <association Id="1dc61b61-0a73-4bf0-8529-90cc70531b68" isDerived="false" sourceEndRoleName="SuitInfo" targetEndRoleName="ProductInfo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="ProductInfo" />
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="53023586-7309-46b1-9e6c-9d0b90fa961f" name="SuitInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
@@ -98,16 +84,44 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" name="ProductInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47" />
+        <targetEnds>
+          <association Id="9858ba99-731e-49c2-9a8a-9a6d7f9c569c" isDerived="false" sourceEndRoleName="ProductInfo" targetEndRoleName="Price" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b388afab-40bd-40b1-9689-c472a51cc7f2" LastKnownName="Price" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="025f6453-0f1e-4bbe-b7bb-e259b483e80b" name="ProductInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1cd185f-cf4d-4a03-9704-ba7007596bb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b144fa80-bbbe-48a0-b351-c678fae917bc" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="42138a99-fb74-46db-a8fc-a101694a71f8" name="Lower" value="*">
+                      <elementDefinition Id="2f056cf6-9fd9-486f-ae56-1cfb5dfce250" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1de6a6d1-abe2-40ac-8624-5fddfd83c631" name="Upper" value="*">
+                      <elementDefinition Id="b5ffd20c-dfe1-4063-ba66-76c28e2db9fb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3c5450c1-df62-4f08-afb1-d31828158d22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b26ed912-e931-4477-a585-e235b7a0a900" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a02b2fb3-112c-4c44-9158-9cf4d6fc2112" name="MaintenanceInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="a02b2fb3-112c-4c44-9158-9cf4d6fc2112" name="Maintenance" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4ca8a612-8351-4439-9f78-ee4347bd5cf6" />
         <generalsInternal>
           <generalization Id="c2422f7a-9c3c-49f5-9568-c2205e8ba623" isSubstitutable="false">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="ProductInfo" />
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
             <elementDefinition Id="9c35e188-d3b6-43cc-aefe-2d2bd7f02d81" />
           </generalization>
         </generalsInternal>
@@ -118,7 +132,7 @@
         <elementDefinition Id="7844cd76-4414-413a-a103-6128f6a383b9" />
         <suppliersInternal>
           <dependency Id="cad966c4-3754-4a23-aa1a-032953e37ab8">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="ProductInfo" />
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
             <elementDefinition Id="dae486c2-d464-492b-ac08-df77ece4cb7b" />
           </dependency>
         </suppliersInternal>
@@ -129,7 +143,7 @@
         <elementDefinition Id="7dd6a248-95ce-4f96-aa90-fb6df621fd97" />
         <targetEnds>
           <association Id="abb0bf31-e13a-463a-81ee-757c6d22a854" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="UserInfo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" LastKnownName="UserInfo" />
+            <classMoniker Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" LastKnownName="Customer" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="0c206d7d-8000-4c4c-812f-b078212123f1" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -188,7 +202,7 @@
         <elementDefinition Id="2537d09f-c267-4137-ae6d-a37206699d9c" />
         <targetEnds>
           <association Id="0fc66154-6f7e-4dd0-abba-1d10a79aa7fd" isDerived="false" sourceEndRoleName="OrderDetail" targetEndRoleName="ProductInfo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="ProductInfo" />
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="67786664-c017-42f8-804a-0706a325a343" name="OrderDetail" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -226,9 +240,40 @@
         </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b388afab-40bd-40b1-9689-c472a51cc7f2" name="Price" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5b04a003-0fde-4c68-9571-1d6de4e4092e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="f44f28c6-796d-4a40-b3f7-8702407c133e" name="Design">
     <elementDefinition Id="2cae4c1a-44f4-4006-a6a1-802a6f39ce6b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="04758b31-f406-4ad5-811a-a11aa1e269ab">
+        <profileInstance Id="90a93963-4099-4e8b-a494-fe950df7df87" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c33ea0d6-c152-4d89-ae21-11a4744789de">
+        <profileInstance Id="b59addb4-0afc-4c17-bc50-18bf421bc9ed" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="73c12fbc-27f8-4ae2-a935-d179b20db70e">
+        <profileInstance Id="735635db-2ef9-4966-be5d-81d64b954732" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4db6ea2d-7b80-430b-ae55-41f1542aa341">
+        <profileInstance Id="bda47ccb-44e2-47ea-b3b6-98ec3cc62cc1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
   <package Id="378f6c9c-7fe5-440e-be9f-ff9a6431b2a5" name="AppServer">
     <elementDefinition Id="e9bacc68-6d61-45a4-a6c5-784a488f2178" />
