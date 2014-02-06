@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{87D78E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApi", "AppServer\TestWebApi\TestWebApi.csproj", "{619822AB-5D84-485B-84FE-1D8A67294E04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{67FFFE6A-BE00-4955-A44C-CEF98AE7E468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67FFFE6A-BE00-4955-A44C-CEF98AE7E468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67FFFE6A-BE00-4955-A44C-CEF98AE7E468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619822AB-5D84-485B-84FE-1D8A67294E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619822AB-5D84-485B-84FE-1D8A67294E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619822AB-5D84-485B-84FE-1D8A67294E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619822AB-5D84-485B-84FE-1D8A67294E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +52,6 @@ Global
 		{094D333C-6497-427D-9155-AD877CD802C4} = {6C3E58E0-F87C-4326-AB94-EC7D4833D2F6}
 		{E43E001F-6C38-4566-A8D0-E14215438775} = {A3777387-A303-4789-B943-B26FB78703E9}
 		{67FFFE6A-BE00-4955-A44C-CEF98AE7E468} = {A3777387-A303-4789-B943-B26FB78703E9}
+		{619822AB-5D84-485B-84FE-1D8A67294E04} = {A3777387-A303-4789-B943-B26FB78703E9}
 	EndGlobalSection
 EndGlobal

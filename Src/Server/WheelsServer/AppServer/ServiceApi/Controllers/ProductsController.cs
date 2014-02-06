@@ -12,7 +12,7 @@ using CodeExplorers.Wheels.AppServer.Model;
 
 namespace CodeExplorers.Wheels.AppServer.ServiceApi.Controllers
 {
-    public class ProductController : ApiController
+    public class ProductsController : ApiController
     {
         private WheelModelContainer db = new WheelModelContainer();
 
