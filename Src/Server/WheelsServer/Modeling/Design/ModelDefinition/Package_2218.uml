@@ -23,12 +23,128 @@
         LastKnownLocation="Package_2220.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
+      <packageMoniker
+        Id="451bb846-6f52-44d2-8773-66856ba1f2c3"
+        LastKnownName="Product"
+        LastKnownLocation="Package_2335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
       <class
-        Id="4251c59f-4ecf-42ae-a14f-a833bea7a369"
-        name="Supplier"
+        Id="1632174a-0b88-473d-ab75-af2d40e083c1"
+        name="Message"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>系统消息</description>
+        <ownedAttributesInternal>
+          <property
+            Id="7c51e9f8-665a-480b-8b2d-b4fa1d113e13"
+            name="Product"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6a504499-9f63-477b-8d70-a2e11465f31a"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7d0aa139-f3f5-402b-8fe1-783374b3b4d5"
+            name="Message"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1de659d1-3878-4225-842f-bf9855098510"
+            name="From"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="103ac70d-f62d-4448-a242-91b92b8fe96a"
+            name="SendDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5404e74-5140-4278-9cae-fa164bd1391c"
+        name="Tag"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb384b97-f94d-425d-98b5-58b5ef467415"
+        name="SNSInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7b0f9c26-be68-4d7d-b6c4-27609701b452"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b4501372-3430-449a-8873-207804a4483e"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0d748179-df54-42c4-bddb-c13b714d6dbf"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

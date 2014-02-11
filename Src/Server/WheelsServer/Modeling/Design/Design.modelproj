@@ -51,6 +51,9 @@
     <Content Include="ModelDefinition\Package_2220.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_2335.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SyncServerDomainModel.classdiagram">
       <SubType>Content</SubType>
     </Content>

@@ -10,25 +10,69 @@
         name="Car"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="e1a02273-dfc6-41fc-bd2f-7015774d176b"
-        name="Wheel"
-        isAbstract="false"
-        isLeaf="false"
         isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="61b9ebf0-8f92-45fd-b77b-c3b83b99d803"
-            isSubstitutable="false">
-            <classMoniker
-              Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="Product"
-              LastKnownLocation="Package_2220.uml" />
-          </generalization>
-        </generalsInternal>
+        <description>车辆信息</description>
+        <ownedAttributesInternal>
+          <property
+            Id="ba59c38a-8de5-4353-bd48-78c1d793670e"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0246c569-c258-4cc5-939d-d0e66336d9b7"
+            name="Brand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>品牌</description>
+          </property>
+          <property
+            Id="3cdfc027-907c-4db4-b886-7104f0fa0004"
+            name="Model"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>型号</description>
+          </property>
+          <property
+            Id="fe42f38d-2f4e-48ef-a250-43c1cb9cf608"
+            name="Code"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e4528e41-2767-451d-86c7-b4698cf2222d"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -38,106 +82,51 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>库存余额</description>
         <suppliersInternal>
           <dependency
             Id="dae486c2-d464-492b-ac08-df77ece4cb7b">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
               LastKnownName="Product"
-              LastKnownLocation="Package_2220.uml" />
+              LastKnownLocation="Package_2335.uml" />
           </dependency>
         </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="4ca8a612-8351-4439-9f78-ee4347bd5cf6"
-        name="Maintenance"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="9c35e188-d3b6-43cc-aefe-2d2bd7f02d81"
-            isSubstitutable="false">
-            <classMoniker
-              Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="Product"
-              LastKnownLocation="Package_2220.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-        name="Product"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <dependency
-            Id="f362bc4c-f531-4ada-ac5f-281fb3da46eb">
-            <classMoniker
-              Id="4251c59f-4ecf-42ae-a14f-a833bea7a369"
-              LastKnownName="Supplier"
-              LastKnownLocation="Package_2218.uml" />
-          </dependency>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="b26ed912-e931-4477-a585-e235b7a0a900"
-            isDerived="false"
-            sourceEndRoleName="ProductInfo"
-            targetEndRoleName="Price"
+        <ownedAttributesInternal>
+          <property
+            Id="ef3759ab-d3e2-4fda-8989-56b3197b7c82"
+            name="Product"
             isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
-              LastKnownName="Price"
-              LastKnownLocation="Package_2220.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c1cd185f-cf4d-4a03-9704-ba7007596bb6"
-                  name="ProductInfo"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3c5450c1-df62-4f08-afb1-d31828158d22"
-                  name="Price"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="2f056cf6-9fd9-486f-ae56-1cfb5dfce250"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="b5ffd20c-dfe1-4063-ba66-76c28e2db9fb"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cdcc9fcb-68a8-4307-adcf-000a7d99ffa1"
+            name="Amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ba59d3d1-a020-410c-b148-455f52242e7b"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -147,6 +136,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>套餐</description>
         <targetEnds>
           <association
             Id="eb2cafe4-1794-462d-9551-68516a6139f0"
@@ -158,7 +148,7 @@
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
               LastKnownName="Product"
-              LastKnownLocation="Package_2220.uml" />
+              LastKnownLocation="Package_2335.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -205,11 +195,48 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="5b04a003-0fde-4c68-9571-1d6de4e4092e"
-        name="Price"
+        Id="1766350e-dd37-440c-9eff-ae1988ecd4f3"
+        name="Effective"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <description>有效性</description>
+        <ownedAttributesInternal>
+          <property
+            Id="9383b76d-447c-4efd-bb88-9ad03766fa3b"
+            name="IsEffective"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c0c7d5da-ce9e-42d3-93bc-3d92e3963de9"
+            name="ValidForm"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ecc4bb4d-5a75-4e90-8124-d7d405ba206f"
+            name="ValidTo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

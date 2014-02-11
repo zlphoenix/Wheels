@@ -3,6 +3,7 @@
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>客户档案</description>
         <elementDefinition Id="16896561-b840-4683-afc1-9496efc70105" />
         <targetEnds>
           <association Id="e70a787f-c36c-4b34-98ae-c44df521b2f0" isDerived="false" sourceEndRoleName="UserInfo" targetEndRoleName="CarInfo" isLeaf="false" isAbstract="false">
@@ -32,15 +33,60 @@
             <elementDefinition Id="c1e0295b-1063-4214-993b-5cf164e91d4a" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="60a410ad-22b1-4bb1-860c-caf0d80a13ec" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="901b7bed-3a6b-4748-8c35-64fe170fc5e4" />
+          </property>
+          <property Id="3dea24d7-7cd2-45f8-933b-1d573ca5f2f6" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="093dcc2f-d97a-4858-8daf-6de93cbd4e48" />
+          </property>
+          <property Id="e8e27cad-9404-4c28-9284-5a9e6efce2e6" name="Phone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b3406c2-252c-4fe0-85c7-46f939e703ba" />
+          </property>
+          <property Id="f2ed8196-d36b-411e-9907-25df1d58abea" name="PlateNum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>车牌号码</description>
+            <elementDefinition Id="083c4649-70d8-4bef-a43b-01f724e3daa2" />
+          </property>
+          <property Id="ece59d3a-7777-43dc-97fb-2b3882e8aa0d" name="NicName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0fb9b542-568b-4b11-83e3-5707b03fbbb7" />
+          </property>
+          <property Id="363d9c83-8f23-4fa0-9770-91662febb34e" name="WeiChatId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12dfe0ac-d43d-458a-bf25-ab2b397e7eb8" />
+          </property>
+          <property Id="44ffbc36-8ee8-4d44-a8be-cfdeef812bd0" name="WeiboId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7823ed89-f801-42db-9ee3-67a7c7d1f02c" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="fba3d07d-ce23-4c7a-ba32-6ac46b220d4c" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>车辆信息</description>
         <elementDefinition Id="fa79ead9-43d1-4019-9ba1-0c5b336a1143" />
+        <ownedAttributesInternal>
+          <property Id="c0af3522-06fc-490d-beb7-61008c417a74" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba59c38a-8de5-4353-bd48-78c1d793670e" />
+          </property>
+          <property Id="ab7edca0-735c-4ff9-a09c-90441b3e46b5" name="Brand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>品牌</description>
+            <elementDefinition Id="0246c569-c258-4cc5-939d-d0e66336d9b7" />
+          </property>
+          <property Id="952247ac-a06c-4af3-8517-9a3c3bdc307b" name="Model" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>型号</description>
+            <elementDefinition Id="3cdfc027-907c-4db4-b886-7104f0fa0004" />
+          </property>
+          <property Id="f50c5acd-5352-47f9-86ee-5b65457564f5" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe42f38d-2f4e-48ef-a250-43c1cb9cf608" />
+          </property>
+          <property Id="fab9858b-7ed7-4a75-b36a-6aa8a5136801" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4528e41-2767-451d-86c7-b4698cf2222d" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="6afe3cd9-1ee2-417c-870c-26a74cedbed3" name="Wheel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>轮毂</description>
         <elementDefinition Id="e1a02273-dfc6-41fc-bd2f-7015774d176b" />
         <generalsInternal>
           <generalization Id="edcd5df1-b7d2-4486-bf69-8f04fc41744e" isSubstitutable="false">
@@ -48,48 +94,39 @@
             <elementDefinition Id="61b9ebf0-8f92-45fd-b77b-c3b83b99d803" />
           </generalization>
         </generalsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="d6d7622a-1384-474a-8e7d-30ffa7bef8bd" name="SuitInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="0b99bd38-1efe-4c90-9ebc-3711f04f660f" />
-        <targetEnds>
-          <association Id="1dc61b61-0a73-4bf0-8529-90cc70531b68" isDerived="false" sourceEndRoleName="SuitInfo" targetEndRoleName="ProductInfo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="53023586-7309-46b1-9e6c-9d0b90fa961f" name="SuitInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="c9eaa4f4-9e6f-4247-a239-158dae911a5d" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="994e1972-5593-4537-8a6e-617bb567970f" name="ProductInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="1dd56f9d-c788-4b24-86f6-b1a5127a8258" name="Lower" value="1">
-                      <elementDefinition Id="b3f7a1bb-4618-41ac-be36-38faa7662a49" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="c23a2903-2c99-4755-8c3d-1f031f1694d0" name="Upper" value="*">
-                      <elementDefinition Id="a18b369a-e1d6-46f5-ab41-1a537ec8e510" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="292fa185-384f-4752-8d3a-6fce96978477" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="eb2cafe4-1794-462d-9551-68516a6139f0" />
-          </association>
-        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cc6c7d92-3b5a-4863-aad8-22d18cad677a" name="PCB" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bbef1759-0987-42ba-b36a-6e02a2049820" />
+          </property>
+          <property Id="b915404a-f21c-4622-a5fa-c9b829e5292e" name="CenteHole" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>中心孔</description>
+            <elementDefinition Id="f700664f-1523-4c25-bb5e-3e8c78d1642a" />
+          </property>
+          <property Id="afad5d77-d747-46b6-9519-08178100132a" name="ET" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9059db7-435b-4259-8b4e-ef4d3357a764" />
+          </property>
+          <property Id="ec133443-06d4-4704-9825-12356fb55852" name="Standard" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>规格</description>
+            <elementDefinition Id="c232681f-308b-4db7-b599-d3fb32ec3f7b" />
+          </property>
+          <property Id="613644e9-af20-4a9e-96dd-bd78d6c46659" name="DemoPicture" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7021127f-f116-4f0b-a64c-089619d05ea2" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>产品档案</description>
         <elementDefinition Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47" />
         <suppliersInternal>
           <dependency Id="faca508f-06f0-4fa7-9219-d787f00a0e8f">
-            <classMoniker Id="d5988942-f11f-422c-9b32-3ded803eca79" LastKnownName="Supplier" />
+            <classMoniker Id="d5988942-f11f-422c-9b32-3ded803eca79" LastKnownName="ProductBrand" />
             <elementDefinition Id="f362bc4c-f531-4ada-ac5f-281fb3da46eb" />
+          </dependency>
+          <dependency Id="20c9113e-8b42-4062-bf9f-d21002eac9a7">
+            <classMoniker Id="9f65e2ab-300c-449e-b02b-efabee6330dc" LastKnownName="Category" />
+            <elementDefinition Id="d538aff0-7763-40be-b5f5-69f9848c6a94" />
           </dependency>
         </suppliersInternal>
         <targetEnds>
@@ -120,10 +157,37 @@
             <elementDefinition Id="b26ed912-e931-4477-a585-e235b7a0a900" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="272f9e06-bd69-4e8d-a40d-7ea03e62b7b8" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="23d5b0e1-4ee0-46f6-847e-24c15396bc6a" />
+          </property>
+          <property Id="5a1a64eb-bc54-4186-a9d8-b6b70d4a75f1" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67eb5676-edca-4595-b387-438a19112202" />
+          </property>
+          <property Id="79827da7-db66-4d76-9130-2cdd4f8b210d" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e899503-41f5-41a0-8dcb-3c28c7e24555" />
+          </property>
+          <property Id="9dff6191-f717-439d-b6ed-e93156caebda" name="Desc" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="458f7c19-141d-432e-983a-149a2bff3eaf" />
+          </property>
+          <property Id="a909de19-3ed3-4d58-988d-4f53e8c3496a" name="DescPicture" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca7cae7a-3b5c-4576-88b1-550afc60954c" />
+          </property>
+          <property Id="0a0d1403-3819-4d70-b354-003cfde3f3dd" name="Effective" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4906625-e2a2-4c1a-b385-472d8ee1dbae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="084384ed-3c9d-48d3-bddd-9e281ab76bf3" LastKnownName="Effective" />
+            </type_NamedElement>
+          </property>
+          <property Id="0af65d2e-88e6-4793-8ee1-31315ede3f0c" name="Category" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef3eca28-c391-427d-818c-2f2b41f198f8" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="a02b2fb3-112c-4c44-9158-9cf4d6fc2112" name="Maintenance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>维修保养</description>
         <elementDefinition Id="4ca8a612-8351-4439-9f78-ee4347bd5cf6" />
         <generalsInternal>
           <generalization Id="c2422f7a-9c3c-49f5-9568-c2205e8ba623" isSubstitutable="false">
@@ -135,6 +199,7 @@
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="0d7a93cf-3209-4e17-9825-c15c010ab490" name="InvBalance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>库存余额</description>
         <elementDefinition Id="7844cd76-4414-413a-a103-6128f6a383b9" />
         <suppliersInternal>
           <dependency Id="cad966c4-3754-4a23-aa1a-032953e37ab8">
@@ -142,10 +207,22 @@
             <elementDefinition Id="dae486c2-d464-492b-ac08-df77ece4cb7b" />
           </dependency>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="f30590cb-dd64-48f7-9248-4fc670a7e7c8" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef3759ab-d3e2-4fda-8989-56b3197b7c82" />
+          </property>
+          <property Id="8f94adda-bba4-4cad-b305-0c20f1c3feb5" name="Amount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdcc9fcb-68a8-4307-adcf-000a7d99ffa1" />
+          </property>
+          <property Id="bd6d3dd6-1df5-448a-a0d8-10f428370b36" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba59d3d1-a020-410c-b148-455f52242e7b" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="b7cf519f-9ec9-4748-a83a-ce3f4a938576" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>预约订单</description>
         <elementDefinition Id="7dd6a248-95ce-4f96-aa90-fb6df621fd97" />
         <targetEnds>
           <association Id="abb0bf31-e13a-463a-81ee-757c6d22a854" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="UserInfo" isLeaf="false" isAbstract="false">
@@ -201,10 +278,34 @@
             <elementDefinition Id="0b32c5e0-1113-4655-a856-1d894b016fb9" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="584d906b-6742-4d9d-8cd8-f908f4655e36" name="OrderNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c0fe1bf-c5d2-4020-9705-21d08ed41fba" />
+          </property>
+          <property Id="a1075546-86e0-4db6-80a0-1bb43257b7c6" name="OrderDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b3e0084-f816-4d00-a176-e3c884ad4451" />
+          </property>
+          <property Id="576f3559-b75d-46e6-a39e-188957dd4578" name="OrderStatus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77a609dc-1440-4caf-8b00-009f44abd167" />
+          </property>
+          <property Id="65ab2e53-b002-46de-a367-08034a682f2b" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26f672f8-1f28-41e0-ae47-a6f5323b9fee" />
+          </property>
+          <property Id="2d60a04e-0fee-45ee-8621-a6e9cd3c8906" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cf990d5-a584-454c-a0c8-1b87e15d9a13" />
+          </property>
+          <property Id="f76edd9c-057b-462c-8516-8b0301906222" name="AppointmentDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="68844106-d76f-49e3-95d2-305d02796a33" />
+          </property>
+          <property Id="f4723c1b-1bd1-4471-af29-0e18b79eccb9" name="TotalAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f2088f8-a1b7-4326-a49f-57ac056bbf04" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="b6a32423-69fc-4e01-b2cf-84336a277936" name="OrderDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>预约订单明细</description>
         <elementDefinition Id="2537d09f-c267-4137-ae6d-a37206699d9c" />
         <targetEnds>
           <association Id="0fc66154-6f7e-4dd0-abba-1d10a79aa7fd" isDerived="false" sourceEndRoleName="OrderDetail" targetEndRoleName="ProductInfo" isLeaf="false" isAbstract="false">
@@ -244,16 +345,211 @@
             <elementDefinition Id="40c221f5-6c88-4db2-ae43-ecdceb181afc" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a629c526-11fd-49d8-a9be-46b3a7344163" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf60a1e9-feef-4682-88ec-d748a7ca3dda" />
+          </property>
+          <property Id="0adaed92-ebec-4de1-83e5-e19d3bdc99c9" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cfd5954-d524-4171-83f0-598ac57b66c9" />
+          </property>
+          <property Id="4593fc63-84df-4561-ac99-cecf51ab85e8" name="LineNum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb7630f3-95d2-4053-b7a1-f32dd58cef11" />
+          </property>
+          <property Id="61e5fd3f-5c27-4e71-84bb-4e90a65cece1" name="Count" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdb10b7f-5987-4faa-a40e-26746993d203" />
+          </property>
+          <property Id="0e2952c6-a01d-47cb-aa27-03ab10cdfebc" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="706c2dc8-ebee-47fe-899c-f72cc9b91968" />
+          </property>
+          <property Id="19f94ddf-5037-40b5-86ac-1f2416f9ac14" name="Amount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18c444ca-09de-41b1-ad89-80c459563b78" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="b388afab-40bd-40b1-9689-c472a51cc7f2" name="Price" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>价目表</description>
         <elementDefinition Id="5b04a003-0fde-4c68-9571-1d6de4e4092e" />
+        <ownedAttributesInternal>
+          <property Id="1f681308-0ad7-4e3c-acbe-c03121672198" name="Effective" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ccf7dbe-342b-4139-910b-d10342650baf" />
+          </property>
+          <property Id="e28f4852-c767-45b3-ac96-b5ccb01095db" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e72d98d-2514-4106-934c-a9a5403e8156" />
+          </property>
+          <property Id="3998617c-aa40-46b8-a9d8-e432b3928a61" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ed70c19-bec8-4565-b83a-0db868807c01" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d5988942-f11f-422c-9b32-3ded803eca79" name="Supplier" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d5988942-f11f-422c-9b32-3ded803eca79" name="ProductBrand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>品牌</description>
         <elementDefinition Id="4251c59f-4ecf-42ae-a14f-a833bea7a369" />
+        <ownedAttributesInternal>
+          <property Id="3747164f-4921-4f28-9db0-5838535ecea8" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5722b195-0206-41d5-93fd-ba999d172764" />
+          </property>
+          <property Id="f7d2f6d3-ea12-42e8-b6a0-34ce86f6916b" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a247b4e6-8e2d-4b83-b5ae-87688501c887" />
+          </property>
+          <property Id="3bd1ae8c-cbfa-4cf4-a7e9-82abac330fb8" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="41715f63-545f-445c-9aa0-4efe5d5c9526" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8ed89a48-e9ac-4b47-a92c-18b4895582ea" name="Tyre" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>轮胎</description>
+        <elementDefinition Id="aba6a52d-4a72-448d-b85d-fac370f33db3" />
+        <generalsInternal>
+          <generalization Id="ba067f8b-f9e3-4226-879c-084e6283bba8" isSubstitutable="false">
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
+            <elementDefinition Id="f2ed8f59-a217-400c-bb4a-1473f3609583" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="e6e09c43-2664-41c2-a21b-197f5498b941" name="Standard" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ca90e8f-ed00-4e64-9be9-dcd0ffbb91f7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="36b33b16-4064-40d7-92f9-1acc051a48ca" name="CartDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>购物车明细</description>
+        <elementDefinition Id="dabf2c99-3ada-4399-88fc-45d4bf643a1a" />
+        <targetEnds>
+          <association Id="99dfe982-964a-4ca4-a642-2ec3aa484145" isDerived="false" sourceEndRoleName="CartDetail" targetEndRoleName="Product" isLeaf="false" isAbstract="false">
+            <classMoniker Id="179ecc51-9a3a-4f28-99c3-e2ad79226ffc" LastKnownName="Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="440e5dc1-94f8-4aed-ac28-eb2e90c23c6d" name="CartDetail" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="51c853b1-bd58-4799-96e7-fe0e76507758" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1231fdcd-4852-49b7-b1f3-67631c24971c" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2871cd7-dcfd-4493-8209-26b526122586" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ba197b2-5c88-480b-badb-6f6f17b05da8" />
+          </association>
+          <association Id="948d61a8-be7b-4df8-b56f-92f4592ca096" isDerived="false" sourceEndRoleName="CartDetail" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd66fcb6-7187-4a38-ac5d-8374397331f2" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b4323a3-93c7-45aa-a49c-2661ca90e4c1" name="CartDetail" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cfa1d0e8-c037-4861-8f1b-c2a3ca4a6c5a" name="Lower" value="*">
+                      <elementDefinition Id="ea94ec55-e867-4f19-9e17-afa97dec7cae" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="bc9b67a8-9118-43d8-b41d-c6adbc924a53" name="Upper" value="*">
+                      <elementDefinition Id="287b75c9-7981-489b-af5f-bb428b8d4015" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f2f5ce34-8b23-4c63-ab3d-aaaba6f0ad6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de9924fb-d71d-43bf-8cc1-b25bf3b5ec4f" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="26cfa3ba-4c65-4b6a-8000-31e31ed0fc0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="697185ef-cd70-4ef3-b698-be7f6c86ade5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="48d8cb6a-4af8-490c-b8b4-49dd4ac714ce" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a8d4610b-4679-454e-b18e-ec5086b2f8fd" />
+          </property>
+          <property Id="cae6210c-daed-48c7-9cef-a168eaca9fba" name="Count" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5b4759c-5d2a-4f64-8aa7-8aa75b7a0e06" />
+          </property>
+          <property Id="3a7fd3a1-a22d-4f1c-85f1-fc255a9206e2" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1b4de5a-50de-4058-a81a-ba671d2d8eb2" />
+          </property>
+          <property Id="905d6d1a-b438-4ff1-a67b-8a83544bfa92" name="LineNum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="16e6dd5c-06a5-4fc3-a821-b425c46c9b1c" />
+          </property>
+          <property Id="3aed4be0-1ee1-4a82-ae45-c3d56e5b6734" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9bd7448b-26b6-4553-9111-d5d9b416e4ae" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e2a47623-eb42-4f17-8c06-cfa8851e2f3e" name="Effective" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>有效性</description>
+        <elementDefinition Id="1766350e-dd37-440c-9eff-ae1988ecd4f3" />
+        <ownedAttributesInternal>
+          <property Id="5f327035-1818-4945-be64-22330d19185b" name="IsEffective" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9383b76d-447c-4efd-bb88-9ad03766fa3b" />
+          </property>
+          <property Id="64932d47-e8c0-432e-96ba-faa1d5620327" name="ValidForm" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0c7d5da-ce9e-42d3-93bc-3d92e3963de9" />
+          </property>
+          <property Id="6fe58347-c102-49b8-871a-cb431f4766a2" name="ValidTo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecc4bb4d-5a75-4e90-8124-d7d405ba206f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="084384ed-3c9d-48d3-bddd-9e281ab76bf3" name="Effective" isAbstract="false" isLeaf="false" cachedFullName="Design::CodeExplorers::Wheels::AppServer::Common::Effective">
+        <elementDefinition Id="1766350e-dd37-440c-9eff-ae1988ecd4f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f65e2ab-300c-449e-b02b-efabee6330dc" name="Category" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>产品分类</description>
+        <elementDefinition Id="7abb973f-e7fc-41af-bf16-7eaa078f3c07" />
+        <ownedAttributesInternal>
+          <property Id="ea894f36-d062-4ff0-926c-5cd0cb8a2db4" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50f7a8e9-5139-4771-815a-a10c3e0a1f62" />
+          </property>
+          <property Id="ccc6b061-f686-49b9-a8a1-ca4048575e06" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34496c29-5a4d-4606-aee1-bd17fabfce22" />
+          </property>
+          <property Id="523da3a2-38f1-4cd6-aea1-1cb509a13ffb" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bc6fa4c-5029-47ac-a137-0223cc0321a1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="7489bfc9-edf5-496d-96c6-b5f25e9188e8" name="OrderStatus" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a116e24-1ddf-4173-b86d-5bc81912dba1" />
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aedb82a3-7c15-4cc6-840a-52a7aecec9d3" name="Message" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>系统消息</description>
+        <elementDefinition Id="1632174a-0b88-473d-ab75-af2d40e083c1" />
+        <ownedAttributesInternal>
+          <property Id="88093ee6-0665-475e-91ca-fd2f696bf025" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c51e9f8-665a-480b-8b2d-b4fa1d113e13" />
+          </property>
+          <property Id="a748832d-5fa8-4116-a786-43c0b4aef409" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a504499-9f63-477b-8d70-a2e11465f31a" />
+          </property>
+          <property Id="88221c43-5713-42e9-bda0-1d52e0bd226f" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d0aa139-f3f5-402b-8fe1-783374b3b4d5" />
+          </property>
+          <property Id="324c37d3-22f4-4538-8890-6d320ba927c5" name="From" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1de659d1-3878-4225-842f-bf9855098510" />
+          </property>
+          <property Id="5488fe38-d38c-473b-9153-586580103e65" name="SendDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="103ac70d-f62d-4448-a242-91b92b8fe96a" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

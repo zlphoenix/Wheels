@@ -18,6 +18,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>预约订单</description>
         <targetEnds>
           <association
             Id="69832844-c1d9-445b-a2ae-155c97bd818e"
@@ -28,7 +29,7 @@
             isAbstract="false">
             <classMoniker
               Id="16896561-b840-4683-afc1-9496efc70105"
-              LastKnownName="UserInfo"
+              LastKnownName="Customer"
               LastKnownLocation="Package_2219.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -124,6 +125,85 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0c0fe1bf-c5d2-4020-9705-21d08ed41fba"
+            name="OrderNo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2b3e0084-f816-4d00-a176-e3c884ad4451"
+            name="OrderDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="77a609dc-1440-4caf-8b00-009f44abd167"
+            name="OrderStatus"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="26f672f8-1f28-41e0-ae47-a6f5323b9fee"
+            name="Customer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1cf990d5-a584-454c-a0c8-1b87e15d9a13"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="68844106-d76f-49e3-95d2-305d02796a33"
+            name="AppointmentDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8f2088f8-a1b7-4326-a49f-57ac056bbf04"
+            name="TotalAmount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -133,6 +213,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>预约订单明细</description>
         <targetEnds>
           <association
             Id="40c221f5-6c88-4db2-ae43-ecdceb181afc"
@@ -143,8 +224,8 @@
             isAbstract="false">
             <classMoniker
               Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
-              LastKnownName="ProductInfo"
-              LastKnownLocation="Package_2220.uml" />
+              LastKnownName="Product"
+              LastKnownLocation="Package_2335.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -200,6 +281,234 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="bf60a1e9-feef-4682-88ec-d748a7ca3dda"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7cfd5954-d524-4171-83f0-598ac57b66c9"
+            name="Product"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb7630f3-95d2-4053-b7a1-f32dd58cef11"
+            name="LineNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cdb10b7f-5987-4faa-a40e-26746993d203"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="706c2dc8-ebee-47fe-899c-f72cc9b91968"
+            name="Price"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="18c444ca-09de-41b1-ad89-80c459563b78"
+            name="Amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dabf2c99-3ada-4399-88fc-45d4bf643a1a"
+        name="CartDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>购物车明细</description>
+        <targetEnds>
+          <association
+            Id="5ba197b2-5c88-480b-badb-6f6f17b05da8"
+            isDerived="false"
+            sourceEndRoleName="CartDetail"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ba2b1fb9-cedc-4c71-895f-3562a9690c47"
+              LastKnownName="Product"
+              LastKnownLocation="Package_2335.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51c853b1-bd58-4799-96e7-fe0e76507758"
+                  name="CartDetail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2871cd7-dcfd-4493-8209-26b526122586"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="697185ef-cd70-4ef3-b698-be7f6c86ade5"
+            isDerived="false"
+            sourceEndRoleName="CartDetail"
+            targetEndRoleName="Customer"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="16896561-b840-4683-afc1-9496efc70105"
+              LastKnownName="Customer"
+              LastKnownLocation="Package_2219.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2f5ce34-8b23-4c63-ab3d-aaaba6f0ad6f"
+                  name="CartDetail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ea94ec55-e867-4f19-9e17-afa97dec7cae"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="287b75c9-7981-489b-af5f-bb428b8d4015"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26cfa3ba-4c65-4b6a-8000-31e31ed0fc0b"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a8d4610b-4679-454e-b18e-ec5086b2f8fd"
+            name="Product"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a5b4759c-5d2a-4f64-8aa7-8aa75b7a0e06"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e1b4de5a-50de-4058-a81a-ba671d2d8eb2"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="16e6dd5c-06a5-4fc3-a821-b425c46c9b1c"
+            name="LineNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9bd7448b-26b6-4553-9111-d5d9b416e4ae"
+            name="Customer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

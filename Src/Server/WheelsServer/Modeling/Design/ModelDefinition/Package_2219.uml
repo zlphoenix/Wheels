@@ -11,6 +11,7 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <description>客户档案</description>
         <targetEnds>
           <association
             Id="c1e0295b-1063-4214-993b-5cf164e91d4a"
@@ -65,6 +66,87 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="901b7bed-3a6b-4748-8c35-64fe170fc5e4"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="093dcc2f-d97a-4858-8daf-6de93cbd4e48"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7b3406c2-252c-4fe0-85c7-46f939e703ba"
+            name="Phone"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="083c4649-70d8-4bef-a43b-01f724e3daa2"
+            name="PlateNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>车牌号码</description>
+          </property>
+          <property
+            Id="0fb9b542-568b-4b11-83e3-5707b03fbbb7"
+            name="NicName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="12dfe0ac-d43d-458a-bf25-ab2b397e7eb8"
+            name="WeiChatId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7823ed89-f801-42db-9ee3-67a7c7d1f02c"
+            name="WeiboId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
